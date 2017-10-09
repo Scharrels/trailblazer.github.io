@@ -10,6 +10,8 @@
 
     {{ content }}
 
+    {% include search.html %}
+
     {% include footer.html %}
 
   </body>

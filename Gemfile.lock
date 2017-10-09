@@ -15,6 +15,21 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    algoliasearch (1.16.0)
+      httpclient (~> 2.8.3)
+      json (>= 1.5.1)
+    algoliasearch-jekyll (0.8.0)
+      algoliasearch (~> 1.4)
+      appraisal (~> 2.1.0)
+      awesome_print (~> 1.6)
+      json (~> 1.8)
+      nokogiri (~> 1.6)
+      verbal_expressions (~> 0.1.5)
+    appraisal (2.1.0)
+      bundler
+      rake
+      thor (>= 0.14.0)
+    awesome_print (1.8.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -56,6 +71,7 @@ GEM
     html-pipeline (2.4.1)
       activesupport (>= 2, < 5)
       nokogiri (>= 1.4)
+    httpclient (2.8.3)
     i18n (0.7.0)
     jekyll (3.1.6)
       colorator (~> 0.1)
@@ -112,6 +128,7 @@ GEM
       sawyer (~> 0.7.0, >= 0.5.3)
     pkg-config (1.1.7)
     public_suffix (1.5.3)
+    rake (12.1.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
@@ -126,20 +143,23 @@ GEM
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
+    thor (0.20.0)
     thread_safe (0.3.5)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    verbal_expressions (0.1.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  algoliasearch-jekyll (~> 0.7)
   github-pages
   jekyll-last-modified-at
   therubyracer
   torture!
 
 BUNDLED WITH
-   1.15.1
+   1.15.4

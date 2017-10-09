@@ -9,3 +9,6 @@ gem "jekyll-last-modified-at"
 
 # gem "torture", path: "../torture"
 gem "torture", git: "https://github.com/apotonick/torture"
+group :jekyll_plugins do
+  gem 'algoliasearch-jekyll', '~> 0.7'
+end

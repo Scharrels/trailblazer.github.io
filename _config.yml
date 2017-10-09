@@ -22,3 +22,11 @@ include:
 gems:
   - jekyll-redirect-from
   - jekyll-last-modified-at
+algolia:
+  application_id: 'fill_in'
+  index_name: 'trailblazer'
+  read_only_api_key: 'fill_in'
+  excluded_files:
+    - 404.html
+    - index.html
+
