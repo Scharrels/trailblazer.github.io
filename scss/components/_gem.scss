@@ -8,6 +8,7 @@ $reform-color: #F04694;
 $representable-color: #10A6F7;
 $roar-color: #F4A608;
 $disposable-color: #8714AD;
+$search-color: #0da331;
 $generic-color: #af111c;
 
 /* Mixin to have each gem page with its own link color */
@@ -76,6 +77,9 @@ $generic-color: #af111c;
   @include gems-color($generic-color)
 }
 
+.search-content {
+  @include gems-color($search-color)
+}
 
 i.engage {
   font-size: 3em;

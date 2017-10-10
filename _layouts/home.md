@@ -8,8 +8,9 @@
 
     {% include top-bar.html %}
 
+    <div class="content-area">
     {{ content }}
-
+    </div>
     {% include search.html %}
 
     {% include footer.html %}

@@ -11,12 +11,8 @@ $(function(config) {
   helper.setQueryParameter('distinct', true);
   helper.on('result', onResult);
 
-  // Input listening for queries
-  var $searchInput = $('.search-input');
-  $searchInput.on('keyup', onQueryChange);
-
   // Content to hide/show when searching
-  var $initialContent = $('article,.hero,section,.expanded');
+  var $initialContent = $('.content-area');
   var $searchContent = $('.search-content');
   var $searchContentResults = $searchContent.find('.search-results');
   $searchContentResults.on('click', 'a', onLinkClick);
@@ -80,8 +76,8 @@ $(function(config) {
   }
 
   function scrollPageToSelector(selector) {
-    var target = $('.page,.post').find(selector);
-    var targetOffset = target[0].getBoundingClientRect().top + window.pageYOffset - 20;
+    var target = $('.content-area').find(selector);
+    var targetOffset = target[0].getBoundingClientRect().top + window.pageYOffset - 70;
     window.setTimeout(function() {
       window.scroll(0, targetOffset);
     }, 100);
@@ -107,5 +103,7 @@ $(function(config) {
     }
   }, 100);
 
-
+  // Input listening for queries
+  var $searchInput = $('.search-input');
+  $searchInput.on('keyup', onQueryChange).trigger('keyup');
 }(window.ALGOLIA_CONFIG));
