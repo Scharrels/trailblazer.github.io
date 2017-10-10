@@ -5,6 +5,10 @@ Currently, the `bower_components/font-awesome/fonts` is copied over to `/`.
 
 bundle exec jekyll serve -I
 
+# Updating the search index
+
+bundle exec jekyll algolia push
+
 # Push to master
 
 Always work on the `f6` branch.
